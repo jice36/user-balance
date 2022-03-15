@@ -1,0 +1,8 @@
+server:
+    host: 127.0.0.1
+    port: 8080
+
+database:
+    dbname: "postgres"
+    dbuser: "postgres"
+    dbpassword: "1234"

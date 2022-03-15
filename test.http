@@ -1,0 +1,56 @@
+
+###  получить логи 1 
+GET http://localhost:8080/logs
+Content-Type: application/json
+
+{
+    "id": "817f172c-9e48-11ec-a3e2-3af9d322ef18",
+    "count": 25
+}
+
+###  получить логи 2 
+GET http://localhost:8080/logs
+Content-Type: application/json
+
+{
+    "id": "817f4440-9e48-11ec-a3e2-3af9d322ef18",
+    "count": 25
+}
+
+### получить баланс
+GET http://localhost:8080/getBalance
+Content-Type: application/json
+
+{
+    "id": "817f172c-9e48-11ec-a3e2-3af9d322ef18"
+}
+
+### зачисление  баланса 1
+POST http://localhost:8080/changeBalance
+Content-Type: application/json
+
+{
+	"operation": "accrue",
+	"id": "817f172c-9e48-11ec-a3e2-3af9d322ef18",
+	"sum": 201.4
+}
+
+### зачисление  баланса 2 
+POST http://localhost:8080/changeBalance
+Content-Type: application/json
+
+{
+	"operation": "accrue",
+	"id": "817f4440-9e48-11ec-a3e2-3af9d322ef18",
+	"sum": 105.4
+}
+
+### перевод средств
+POST http://localhost:8080/transfer
+Content-Type: application/json
+
+ {
+	"sender_id": "817f172c-9e48-11ec-a3e2-3af9d322ef18",
+    "receiver_id": "817f4440-9e48-11ec-a3e2-3af9d322ef18",
+	"sum": 13.1
+}
