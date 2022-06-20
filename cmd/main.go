@@ -4,9 +4,9 @@ import (
 	"flag"
 	"log"
 
-	"github.com/avitoTask/internal/conversion"
-	"github.com/avitoTask/internal/server"
-	"github.com/avitoTask/internal/service"
+	"github.com/userBalanceService/internal/conversion"
+	"github.com/userBalanceService/internal/server"
+	"github.com/userBalanceService/internal/service"
 )
 
 var (

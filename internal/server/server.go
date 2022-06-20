@@ -8,9 +8,9 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/avitoTask/internal/conversion"
-	"github.com/avitoTask/internal/service"
-	"github.com/avitoTask/models"
+	"github.com/userBalanceService/internal/conversion"
+	"github.com/userBalanceService/internal/service"
+	"github.com/userBalanceService/models"
 
 	"github.com/gorilla/mux"
 )

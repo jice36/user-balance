@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/avitoTask/models"
+	"github.com/userBalanceService/models"
 
 	"github.com/google/uuid"
 	_ "github.com/lib/pq"
